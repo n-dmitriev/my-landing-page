@@ -1,0 +1,265 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+      <style>
+          .preloader {
+              position: fixed;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              z-index: 9999;
+              background-color: #fefefe;
+          }
+      </style>
+      <link href="fancybox-master/jquery.fancybox.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="main.css">
+      <title>DN ART</title>
+      <link rel="icon" href="img/1234.png">
+  </head>
+
+  <body>
+      <div class="preloader d-flex justify-content-center align-items-center">
+          <div class="spinner-border text-danger" style="width: 10rem; height: 10rem;" role="status">
+              <span class="sr-only">Loading...</span>
+          </div>
+      </div>
+
+      <button class="scrollToTop"><i class="fas fa-angle-up"></i></button>
+
+      <!--Шапка сайта-->
+      <header class="head" id="head">
+          <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+              <div class="container-fluid">
+                  <a href="#" class="navbar-brand"> <img src="img/ArtistDN.png"> </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item active scroll">
+                              <a href="#caption1" class="nav-link">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="gallery.html" class="nav-link">Gallery</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="#" class="nav-link" data-toggle="modal" data-target="#orderForm">Order art</a>
+                          </li>
+                          <li class="nav-item scroll">
+                              <a href="#Abouttheauthor" class="nav-link">About the author & Contacts</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </header>
+
+      <!-- Начальная заставка -->
+      <section class="section-initial-screen">
+          <div class="container text-center">
+              <div class="row justify-content-center">
+                  <div class="initial-screen  col-12" id="caption1">
+                      <h1 class="display-2">Dmitriev<br> Digital-Artist</h1>
+                      <br>
+                      <button type="button" class="btn btn-outline-light btn-lg"
+                          onclick="document.location='gallery.html'">See a gallery with all the works</button>
+                      <button type="button" class="btn btn-outline-light btn-lg" data-target="#orderForm" role="button"
+                          data-toggle="modal">Order art</button>
+                  </div>
+              </div>
+              <div>
+                    <video src="img/Animatix.mov" autoplay loop></video>
+              </div>
+          </div>
+      </section>
+
+      <!-- Описание стилистик -->
+      <section class="section-description-stylistics">
+          <hr class="my-4">
+          <div class="сontent">
+              <h2 class="display-4">Art variants</h2>
+              <div class="row text-center justify-content-center">
+                  <div class="col-12 col-sm-6 col-md-4 scroll">
+                      <a href="#eoc"><i class="fa  fa-paint-brush fa-2x"></i></a>
+                      <h3 class="display-5">Creating concepts</h3>
+                      <p>Visualization of the character according to your description or sketches.</p>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 scroll">
+                      <a href="#eop"><i class="fa fa-palette fa-2x"></i></a>
+                      <h3 class="display-5">Creating portraits</h3>
+                      <p>Сreating portraits by photo, sketch or description</p>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 scroll">
+                      <a href="#eogs"><i class="fa fa-skull fa-2x"></i></a>
+                      <h3 class="display-5">Gothic stylation</h3>
+                      <p> Creating a portrait and its further stylization according to your description</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+      <!-- Фиксированный блок с картинкой -->
+      <figure class="fixed-wrap"> </figure>
+
+      <!-- Примеры работ -->
+      <section class="section-examples-work text-center">
+          <div class="content">
+              <h2 class="display-4" id="eoc">Examples of characters</h2>
+              <div class="row">
+                  <div class="col-12 col-sm-4 thumb">
+                      <a data-fancybox="gallery" href="img/gallery/Art12.jpg">
+                          <img class="img-fluid" src="img/SquarePic/SquarePic4.jpg">
+                      </a>
+                  </div>
+                  <div class="col-12 col-sm-4 thumb">
+                      <a data-fancybox="gallery" href="img/gallery/Art23.jpg">
+                          <img class="img-fluid" src="img/SquarePic/SquarePic5.jpg">
+                      </a>
+                  </div>
+                  <div class="col-12 col-sm-4 thumb">
+                      <a data-fancybox="gallery" href="img/gallery/Art21.jpg">
+                          <img class="img-fluid" src="img/SquarePic/SquarePic6.jpg">
+                      </a>
+                  </div>
+              </div>
+
+              <hr class="my-2" id="eop">
+              <h2 class="display-4">Examples of portraits</h2>
+              <div class="row">
+                  <div class="col-12 col-sm-4 thumb">
+                      <a data-fancybox="gallery" href="img/gallery/Art10.jpg">
+                          <img class="img-fluid" src="img/SquarePic/SquarePic1.jpg">
+                      </a>
+                  </div>
+                  <div class="col-12 col-sm-4 thumb">
+                      <a data-fancybox="gallery" href="img/gallery/Art15.jpg">
+                          <img class="img-fluid" src="img/SquarePic/SquarePic2.jpg">
+                      </a>
+                  </div>
+                  <div class="col-12 col-sm-4 thumb">
+                      <a data-fancybox="gallery" href="img/gallery/Art9.jpg">
+                          <img class="img-fluid" src="img/SquarePic/SquarePic3.jpg">
+                      </a>
+                  </div>
+              </div>
+
+              <hr class="my-2" id="eogs">
+              <h2 class="display-4">Examples of gothic stylation</h2>
+              <div class="row">
+                  <div class="col-12 col-sm-4 thumb">
+                      <a data-fancybox="gallery" href="img/gallery/Art17.jpg">
+                          <img class="img-fluid" src="img/SquarePic/SquarePic7.jpg">
+                      </a>
+                  </div>
+                  <div class="col-12 col-sm-4 thumb">
+                      <a data-fancybox="gallery" href="img/gallery/Art7.jpg">
+                          <img class="img-fluid" src="img/SquarePic/SquarePic8.jpg">
+                      </a>
+                  </div>
+                  <div class="col-12 col-sm-4 thumb">
+                      <a data-fancybox="gallery" href="img/gallery/Art6.jpg">
+                          <img class="img-fluid" src="img/SquarePic/SquarePic9.jpg">
+                      </a>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </section>
+
+      <hr class="my-2">
+
+      <!-- Фиксированный блок с картинкой -->
+      <figure class="fixed-wrap"> </figure>
+
+      <!-- Об авторе -->
+      <section class="section-about-author">
+          <div class="content jumbotron top-line" id="Abouttheauthor">
+              <div class="row justify-content-center">
+                  <div class="col-12 col-sm-3 my-face">
+                      <a href="#" data-toggle="modal" data-target="#orderForm"><img
+                              src="https://pp.userapi.com/c846320/v846320248/1fbf44/Kok074DewNI.jpg"
+                              class="img-fluid rounded-circle"> </a>
+                  </div>
+                  <div class="col-12 col-md-9">
+                      <h2 class="display-4">About the author</h2>
+                      <p class="lead">Hi, my name is Nikita, and I'm an aspiring self-taught artist. I live in Russia
+                          and study to be a programmer, digital drawing is my main hobby, which I have been doing since
+                          2018. If you like my work and you want
+                          to support me, then order my art on one of the proposed topics(click on my beautiful face).
+                      </p>
+                  </div>
+              </div>
+      </section>
+
+      <!-- Контакты -->
+      <footer class="contacts">
+          <div class="container text-center">
+              <h2>Contacts</h2>
+              <div class="row justify-content-center">
+                  <div class="social col-4">
+                      <a href="https://www.instagram.com/n.dmitriev99/" target="_blank"><i class="fab fa-instagram"
+                              aria-hidden="true"></i></a>
+                  </div>
+                  <div class="social col-4">
+                      <a href="https://vk.com/mrdmitriev99" target="_blank"><i class="fab fa-vk"
+                              aria-hidden="true"></i></a>
+                  </div>
+                  <div class="social col-4">
+                      <a href="mailto:nikita-dmitr@yandex.ru"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+      <!-- Форма -->
+      <div class="modal fade" id="orderForm" role="dialog" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Order form <br> (Форма не отправит ваши данные:D)
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <form id="contactForm" action="handler.php" method="post">
+                          <div class="form-group">
+                              <label for="name">Your name:</label>
+                              <input id="name" class="form-control" name="name" required type="text">
+                          </div>
+                          <div class="form-group">
+                              <label for="email">Your contact details:</label>
+                              <input id="contact" class="form-control" name="contact" required type="text">
+                          </div>
+                          <div class="form-group">
+                              <label for="message">Expanded describe the job:</label>
+                              <textarea id="message" class="form-control" required name="message" rows="4"></textarea>
+                          </div>
+                          <!-- <button id="button" class="btn btn-success" type="submit">Send</button> -->
+                          <button id="button" class="close" data-dismiss="modal" aria-label="Close">Send</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script defer src="JS/main.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+          integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+      </script>
+      <script src="fancybox-master/jquery.fancybox.js"></script>
+  </body>
+
+  </html>

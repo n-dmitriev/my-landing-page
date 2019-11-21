@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999;
+            background-color: #fefefe;
+        }
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="fancybox-master/jquery.fancybox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>DN ART|Gallery</title>
+    <link rel="icon" href="img/1234.png">
+</head>
+
+<body>
+    <div class="preloader d-flex justify-content-center align-items-center">
+        <div class="spinner-border text-danger" style="width: 10rem; height: 10rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <button class="scrollToTop"><i class="fas fa-angle-up"></i></button>
+    <!--Шапка сайта-->
+    <header class="head" id="head">
+        <nav class="navbar navbar-expand-md navbar-light  sticky-top bg-light sticky-top">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand"> <img src="img/ArtistDN.png"> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item active scroll">
+                            <a href="#gallery" class="nav-link">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#orderForm">Order art</a>
+                        </li>
+                        <li class="nav-item scroll">
+                            <a href="#Abouttheauthor" class="nav-link">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Фиксированный блок с картинкой -->
+
+    <figure class="fixed-wrap"> </figure>
+
+    <!-- Заголовок -->
+    <div class="text-center">
+        <hr class="my-1">
+        <h3 class="display-2">Gallery</h3>
+        <hr class="my-1">
+    </div>
+
+    <div class="loader-wrap hide" id="loader">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Галерея -->
+    <section class="gallery">
+        <div class="content gl">
+            <div class="row justify-content-center" id="scriptGallery">
+            </div>
+        </div>
+    </section>
+
+    <!-- Фиксированный блок с картинкой -->
+    <figure class="fixed-wrap"> </figure>
+
+
+    <!-- Контакты -->
+    <footer class="contacts" id="Abouttheauthor">
+        <div class="container text-center">
+            <h2>Contacts</h2>
+            <div class="row justify-content-center">
+                <div class="social col-4">
+                    <a href="https://www.instagram.com/n.dmitriev99/" target="_blank"><i class="fab fa-instagram"
+                            aria-hidden="true"></i></a>
+                </div>
+                <div class="social col-4">
+                    <a href="https://vk.com/mrdmitriev99" target="_blank"><i class="fab fa-vk"
+                            aria-hidden="true"></i></a>
+                </div>
+                <div class="social col-4">
+                    <a href="mailto:nikita-dmitr@yandex.ru"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Форма -->
+    <div class="modal fade" id="orderForm" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Order form <br> (Форма не отправит ваши данные:D)
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm" action="handler.php" method="post">
+                        <div class="form-group">
+                            <label for="name">Your name:</label>
+                            <input id="name" class="form-control" name="name" required type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your contact details:</label>
+                            <input id="contact" class="form-control" name="contact" required type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Expanded describe the job:</label>
+                            <textarea id="message" class="form-control" required name="message" rows="4"></textarea>
+                        </div>
+                        <!-- <button id="button" class="btn btn-success" type="submit">Send</button> -->
+                        <button id="button" class="close" data-dismiss="modal" aria-label="Close">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="JS/gallery.js"></script>
+    <script defer src="JS/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+    <script src="fancybox-master/jquery.fancybox.js"></script>
+</body>
+
+</html>
