@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="fancybox-master/jquery.fancybox.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>DN ART|Gallery</title>
     <link rel="icon" href="img/1234.png">
 </head>
@@ -46,7 +47,7 @@
                             <a href="index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item active scroll">
-                            <a href="#gallery" class="nav-link">Gallery</a>
+                            <a href="" class="nav-link">Gallery</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link" data-toggle="modal" data-target="#orderForm">Order art</a>
@@ -122,13 +123,13 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form id="contactForm" action="handler.php" method="post">
+                    <form id="contactForm" action="" method="post">
                         <div class="form-group">
                             <label for="name">Your name:</label>
                             <input id="name" class="form-control" name="name" required type="text">
                         </div>
                         <div class="form-group">
-                            <label for="email">Your contact details:</label>
+                            <label>Your contact details:</label>
                             <input id="contact" class="form-control" name="contact" required type="text">
                         </div>
                         <div class="form-group">
